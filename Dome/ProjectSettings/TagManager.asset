@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - DoorTrigger
+  - BoostUpgrade
+  - OffMap
+  - EnergyRefill
+  - NPC
+  - CinemachineTarget
+  - CameraZone
+  - MusicZone
+  - EndMusic
+  - Concrete
+  - Sand1
+  - Sand2
+  - Monument
+  - OffmapRight
+  - OffmapLeft
+  - VaultKey
+  - BatteryCollector
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Post-Processing
+  - Ground
+  - Post-Processing 2
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
