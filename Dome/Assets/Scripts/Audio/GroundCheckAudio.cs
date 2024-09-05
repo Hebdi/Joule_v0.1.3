@@ -68,14 +68,14 @@ public class GroundCheckAudio : MonoBehaviour
             terrainTypeFloat = GetTerrainTypeFloat(groundTag);
 
             FMODUnity.RuntimeManager.StudioSystem.setParameterByName("TerrainType", terrainTypeFloat);
-            Debug.Log($"Setting TerrainType to {terrainTypeFloat}");
+            
         }
     }
 
     void HandleAirborneAudio()
     {
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("TerrainType", 5f);
-        Debug.Log("Setting TerrainType to 5f for airborne sound");
+        
     }
 
     void UpdateSpeed()
@@ -103,14 +103,14 @@ public class GroundCheckAudio : MonoBehaviour
         }
 
         rollOnGround.setParameterByName("Speed", speed);
-        Debug.Log($"Setting Speed parameter to {speed}");
+       
 
         rollOnGround.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(transform));
     }
 
     void PlayLandingSound()
     {
-        Debug.Log("Playing landing sound: " + landingSoundEvent);
+        
         FMODUnity.RuntimeManager.PlayOneShot(landingSoundEvent, transform.position);
         landingSoundPlayed = true;
     }
