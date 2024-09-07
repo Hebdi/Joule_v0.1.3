@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 791232595582506278}
   - component: {fileID: 2426404014350227957}
   - component: {fileID: 1838631530981951693}
+  - component: {fileID: -2857421894609218445}
   m_Layer: 0
   m_Name: BatteryCoil_01
   m_TagString: EmptyBattery
@@ -114,6 +115,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3869805, y: 0.048870243, z: 1}
   m_Center: {x: 0, y: -1.2807609, z: 0}
+--- !u!114 &-2857421894609218445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448789907821487990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a504f9f445684144986c35ac8c21ac09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullBatteryPrefab: {fileID: 7487347391819016337, guid: 92e20db513311fb4d80d7c05c1028949, type: 3}
+  rechargeTime: 120
 --- !u!1 &881067757341392469
 GameObject:
   m_ObjectHideFlags: 0

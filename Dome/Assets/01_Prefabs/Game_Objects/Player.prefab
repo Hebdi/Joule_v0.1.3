@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4882198055376678801}
   - component: {fileID: 4882198055376678798}
   - component: {fileID: 4882198055376678802}
-  - component: {fileID: 1955875034212987922}
   - component: {fileID: 4882198055376678799}
   - component: {fileID: 5424953397975828375}
   - component: {fileID: 4882198055376678805}
@@ -115,7 +114,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 12
-  turnspeed: 1
+  maxTurnSpeed: 5
+  minTurnSpeed: 1
+  maxVelocityForTurnSpeed: 15
   gravityMultiplier: 30
   boostMultiplier: 1.2
   groundLayer:
@@ -128,32 +129,9 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
---- !u!114 &1955875034212987922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4882198055376678796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2296e3001fa53bc439d0c3dba7e89a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 30
-  turnSpeed: 2
-  gravityMultiplier: 30
-  boostMultiplier: 1.2
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  upgradeSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+  leftWheelTrail: {fileID: 0}
+  rightWheelTrail: {fileID: 0}
+  dustParticleSystem: {fileID: 0}
 --- !u!54 &4882198055376678799
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -60,7 +60,7 @@ MonoBehaviour:
   - id: 4
     fields:
     - title: Name
-      value: <color=#338d7d><b>Control Unit 1</b></color>
+      value: <color=#338d7d><b>Control Unit</b></color>
       type: 0
       typeString: 
     - title: Pictures
@@ -468,6 +468,20 @@ MonoBehaviour:
       value: The riddle has been solved.
       type: 0
       typeString: CustomFieldType_Text
+  - id: 3
+    fields:
+    - title: Name
+      value: Instructed
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: The Player has had the briefing.
+      type: 0
+      typeString: CustomFieldType_Text
   conversations:
   - id: 1
     fields:
@@ -597,7 +611,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 1
@@ -634,7 +648,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 446.06183
-        y: 144.38597
+        y: 143.01
         width: 160
         height: 30
     - id: 2
@@ -720,7 +734,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: "PlayNPCSound(\"Computer\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: 
       conversationID: 1
@@ -735,12 +749,6 @@ MonoBehaviour:
         originDialogueID: 3
         destinationConversationID: 1
         destinationDialogueID: 4
-        isConnector: 0
-        priority: 2
-      - originConversationID: 1
-        originDialogueID: 3
-        destinationConversationID: 1
-        destinationDialogueID: 17
         isConnector: 0
         priority: 2
       - originConversationID: 1
@@ -870,179 +878,6 @@ MonoBehaviour:
         y: 717.3465
         width: 160
         height: 30
-    - id: 17
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: How does that work?
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 17
-        destinationConversationID: 1
-        destinationDialogueID: 18
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 493.15417
-        y: 339.03644
-        width: 160
-        height: 30
-    - id: 18
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: All houses in Vault Tower are movable and can transform electricity
-          into potential energy when lifted up.
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 18
-        destinationConversationID: 1
-        destinationDialogueID: 19
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 493.15417
-        y: 389.03644
-        width: 160
-        height: 30
-    - id: 19
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: Lowering the houses transforms the potential energy into kinetic energy
-          which powers a generator and eventually creates electricity.
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 19
-        destinationConversationID: 1
-        destinationDialogueID: 21
-        isConnector: 0
-        priority: 2
-      - originConversationID: 1
-        originDialogueID: 19
-        destinationConversationID: 1
-        destinationDialogueID: 8
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 493.15417
-        y: 439.03644
-        width: 160
-        height: 30
     - id: 21
       fields:
       - title: Title
@@ -1125,7 +960,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: "PlayNPCSound(\"Computer\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: 
       conversationID: 1
@@ -1139,13 +974,13 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 22
         destinationConversationID: 1
-        destinationDialogueID: 23
+        destinationDialogueID: 24
         isConnector: 0
         priority: 2
       - originConversationID: 1
         originDialogueID: 22
         destinationConversationID: 1
-        destinationDialogueID: 24
+        destinationDialogueID: 23
         isConnector: 0
         priority: 2
       - originConversationID: 1
@@ -1168,7 +1003,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 1031.8325
-        y: 268.3483
+        y: 265.32416
         width: 160
         height: 30
     - id: 23
@@ -1309,7 +1144,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: 
       conversationID: 1
@@ -1330,6 +1165,12 @@ MonoBehaviour:
         originDialogueID: 25
         destinationConversationID: 1
         destinationDialogueID: 29
+        isConnector: 0
+        priority: 2
+      - originConversationID: 1
+        originDialogueID: 25
+        destinationConversationID: 1
+        destinationDialogueID: 39
         isConnector: 0
         priority: 2
       - originConversationID: 1
@@ -1376,7 +1217,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: 
       conversationID: 1
@@ -1611,7 +1452,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: 
       conversationID: 1
@@ -1855,7 +1696,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: 
       conversationID: 1
@@ -1967,7 +1808,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: 
       conversationID: 1
@@ -2157,7 +1998,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: "PlayNPCSound(\"Computer\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: 
       conversationID: 1
@@ -2279,7 +2120,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: "PlayNPCSound(\"Computer\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: 
       conversationID: 1
@@ -2330,7 +2171,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: // Leading company for energy supply in the 21th century.
+        value: // Leading company for energy supply in the 19th century.
         type: 0
         typeString: 
       - title: Sequence
@@ -2389,7 +2230,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: "PlayNPCSound(\"Computer\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: 
       conversationID: 1
@@ -2586,9 +2427,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: '// Error
-
-          No information available;'
+        value: // Fatal exception error
         type: 0
         typeString: 
       - title: Sequence
@@ -2702,7 +2541,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: 
       conversationID: 1
@@ -2984,7 +2823,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: 
       conversationID: 1
@@ -3094,7 +2933,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: 
       conversationID: 1
@@ -3332,7 +3171,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: 
       conversationID: 1
@@ -3399,7 +3238,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: "PlayNPCSound(\"Computer\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: 
       conversationID: 1
@@ -3418,7 +3257,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 484.27805
-        y: 774.07513
+        y: 772.427
         width: 160
         height: 30
     - id: 75
@@ -3444,11 +3283,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: I am an automated restoration entity.
+        value: I am only an automated restoration entity.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 1
@@ -3517,13 +3356,19 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 76
         destinationConversationID: 1
-        destinationDialogueID: 8
+        destinationDialogueID: 21
         isConnector: 0
         priority: 2
       - originConversationID: 1
         originDialogueID: 76
         destinationConversationID: 1
         destinationDialogueID: 24
+        isConnector: 0
+        priority: 2
+      - originConversationID: 1
+        originDialogueID: 76
+        destinationConversationID: 1
+        destinationDialogueID: 8
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -3538,8 +3383,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 24.269386, y: 61.721302}
-    canvasZoom: 0.72675014
+    canvasScrollPosition: {x: 0, y: 98.29001}
+    canvasZoom: 0.33675033
   - id: 2
     fields:
     - title: Title
@@ -7733,7 +7578,7 @@ MonoBehaviour:
   - id: 3
     fields:
     - title: Title
-      value: Control Unit 1
+      value: Control Unit
       type: 0
       typeString: CustomFieldType_Text
     - title: Description
@@ -7827,8 +7672,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 160
-        y: 30
+        x: 239.66434
+        y: 143.20715
         width: 160
         height: 30
     - id: 1
@@ -7882,8 +7727,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 160
-        y: 80
+        x: 239.66434
+        y: 193.20715
         width: 160
         height: 30
     - id: 3
@@ -7909,7 +7754,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Welcome Unit 2 - 5 - 4
+        value: Welcome Unit 254.
         type: 0
         typeString: 
       - title: Sequence
@@ -7937,8 +7782,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 161.30463
-        y: 131.72868
+        x: 240.96896
+        y: 244.93585
         width: 160
         height: 30
     - id: 4
@@ -7985,6 +7830,18 @@ MonoBehaviour:
         destinationDialogueID: 5
         isConnector: 0
         priority: 2
+      - originConversationID: 3
+        originDialogueID: 4
+        destinationConversationID: 3
+        destinationDialogueID: 8
+        isConnector: 0
+        priority: 2
+      - originConversationID: 3
+        originDialogueID: 4
+        destinationConversationID: 3
+        destinationDialogueID: 20
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -7992,8 +7849,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 161.30463
-        y: 184.33795
+        x: 240.96896
+        y: 297.5451
         width: 160
         height: 30
     - id: 5
@@ -8047,8 +7904,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 160
-        y: 280
+        x: 237.70193
+        y: 377.07727
         width: 160
         height: 30
     - id: 6
@@ -8074,7 +7931,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: // Mission Recovery
+        value: '// Mission Recovery:
+
+          Reach and activate the Wind Monument'
         type: 0
         typeString: 
       - title: Sequence
@@ -8102,8 +7961,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 160
-        y: 330
+        x: 237.70193
+        y: 427.0772
         width: 160
         height: 30
     - id: 7
@@ -8129,7 +7988,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: // Reach and activate the Wind Monument.
+        value: Be aware that the fate of humanity depends on your success.
         type: 0
         typeString: 
       - title: Sequence
@@ -8147,25 +8006,7 @@ MonoBehaviour:
       - originConversationID: 3
         originDialogueID: 7
         destinationConversationID: 3
-        destinationDialogueID: 8
-        isConnector: 0
-        priority: 2
-      - originConversationID: 3
-        originDialogueID: 7
-        destinationConversationID: 3
-        destinationDialogueID: 9
-        isConnector: 0
-        priority: 2
-      - originConversationID: 3
-        originDialogueID: 7
-        destinationConversationID: 3
-        destinationDialogueID: 21
-        isConnector: 0
-        priority: 2
-      - originConversationID: 3
-        originDialogueID: 7
-        destinationConversationID: 3
-        destinationDialogueID: 20
+        destinationDialogueID: 30
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -8175,8 +8016,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 160
-        y: 380
+        x: 237.70193
+        y: 477.07727
         width: 160
         height: 30
     - id: 8
@@ -8220,18 +8061,18 @@ MonoBehaviour:
       - originConversationID: 3
         originDialogueID: 8
         destinationConversationID: 3
-        destinationDialogueID: 10
+        destinationDialogueID: 12
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: "Variable[\"Instructed\"] == true\r"
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 160
-        y: 430
+        x: 709.5431
+        y: 524.4656
         width: 160
         height: 30
     - id: 9
@@ -8285,118 +8126,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 360
-        y: 430
-        width: 160
-        height: 30
-    - id: 10
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 4
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: // Monument of Recovery
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: "PlayNPCSound(\"Computer\");\r"
-        type: 0
-        typeString: 
-      conversationID: 3
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 3
-        originDialogueID: 10
-        destinationConversationID: 3
-        destinationDialogueID: 11
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 160
-        y: 480
-        width: 160
-        height: 30
-    - id: 11
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 4
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: // Wind Monument
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 3
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 3
-        originDialogueID: 11
-        destinationConversationID: 3
-        destinationDialogueID: 12
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 160
-        y: 530
+        x: 922.92993
+        y: 618.17395
         width: 160
         height: 30
     - id: 12
@@ -8422,12 +8153,16 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: // A monumental power plant, to generate energy for the survival of
-          civilization.
+        value: '// Monument of Recovery:
+
+          Wind Monument;
+
+          A monumental
+          power plant, to generate energy for the survival of civilization;'
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: "PlayNPCSound(\"Computer\");\r"
         type: 0
         typeString: 
       conversationID: 3
@@ -8469,8 +8204,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 160
-        y: 580
+        x: 709.5431
+        y: 676.2295
         width: 160
         height: 30
     - id: 13
@@ -8514,61 +8249,6 @@ MonoBehaviour:
       - originConversationID: 3
         originDialogueID: 13
         destinationConversationID: 3
-        destinationDialogueID: 14
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 160
-        y: 630
-        width: 160
-        height: 30
-    - id: 14
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 4
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: Negative.
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: "PlayNPCSound(\"Computer\");\r"
-        type: 0
-        typeString: 
-      conversationID: 3
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 3
-        originDialogueID: 14
-        destinationConversationID: 3
         destinationDialogueID: 17
         isConnector: 0
         priority: 2
@@ -8579,8 +8259,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 160
-        y: 682
+        x: 709.5431
+        y: 724.4658
         width: 160
         height: 30
     - id: 15
@@ -8646,8 +8326,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 360
-        y: 480
+        x: 922.92993
+        y: 668.17395
         width: 160
         height: 30
     - id: 16
@@ -8701,8 +8381,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 360
-        y: 530
+        x: 922.92993
+        y: 718.17395
         width: 160
         height: 30
     - id: 17
@@ -8728,11 +8408,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: No further information available.
+        value: Negative. No further information available.
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: "PlayNPCSound(\"Computer\");\r"
         type: 0
         typeString: 
       conversationID: 3
@@ -8768,8 +8448,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 160
-        y: 732
+        x: 709.5431
+        y: 826.4658
         width: 160
         height: 30
     - id: 18
@@ -8795,7 +8475,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Good luck Unit 2 - 5 - 4
+        value: Good luck Unit 254.
         type: 0
         typeString: 
       - title: Sequence
@@ -8827,8 +8507,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 574.9515
-        y: 283.45813
+        x: 1137.8811
+        y: 471.63168
         width: 160
         height: 30
     - id: 19
@@ -8854,7 +8534,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: The Joule Corporation trusts in your success.
+        value: The Joule Corporation trusts in your success!
         type: 0
         typeString: 
       - title: Sequence
@@ -8874,14 +8554,14 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: "Variable[\"Instructed\"] = true;\r"
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 574.9515
-        y: 333.45813
+        x: 1137.8811
+        y: 521.6317
         width: 160
         height: 30
     - id: 20
@@ -8928,15 +8608,15 @@ MonoBehaviour:
         destinationDialogueID: 18
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: "Variable[\"Instructed\"] == true\r"
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 378.80692
-        y: 279.52475
+        x: 929.9539
+        y: 483.30588
         width: 160
         height: 30
     - id: 21
@@ -8990,8 +8670,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 561.4448
-        y: 428.96805
+        x: 1124.3745
+        y: 617.14197
         width: 160
         height: 30
     - id: 22
@@ -9045,8 +8725,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 561.4448
-        y: 478.96805
+        x: 1124.3745
+        y: 667.14197
         width: 160
         height: 30
     - id: 23
@@ -9118,8 +8798,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 561.4448
-        y: 528.968
+        x: 1124.3745
+        y: 717.14197
         width: 160
         height: 30
     - id: 24
@@ -9173,8 +8853,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 561.4448
-        y: 578.968
+        x: 1124.3745
+        y: 767.14197
         width: 160
         height: 30
     - id: 25
@@ -9240,8 +8920,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 563.41187
-        y: 687.05664
+        x: 1126.3416
+        y: 875.2306
         width: 160
         height: 30
     - id: 26
@@ -9296,13 +8976,1122 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 563.61505
-        y: 633.6167
+        x: 1126.5447
+        y: 821.79065
+        width: 160
+        height: 30
+    - id: 28
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Yes, I do.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 28
+        destinationConversationID: 3
+        destinationDialogueID: 33
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 226.0875
+        y: 595.7413
+        width: 160
+        height: 30
+    - id: 30
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: "You will now receive instructions.\_\r\nDo you understand Unit 254?"
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 30
+        destinationConversationID: 3
+        destinationDialogueID: 28
+        isConnector: 0
+        priority: 2
+      - originConversationID: 3
+        originDialogueID: 30
+        destinationConversationID: 3
+        destinationDialogueID: 49
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 237.70193
+        y: 527.0773
+        width: 160
+        height: 30
+    - id: 33
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '// Briefing issue 1
+
+          Your energy is limited;
+
+          Don''t
+          waste energy needlessly;
+
+          You can extract power from solar coil
+          batteries;'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 33
+        destinationConversationID: 3
+        destinationDialogueID: 34
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 226.0875
+        y: 645.74133
+        width: 160
+        height: 30
+    - id: 34
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Do you understand your energy consumption Unit 254?
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: "PlayNPCSound(\"Computer\");\r"
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 34
+        destinationConversationID: 3
+        destinationDialogueID: 35
+        isConnector: 0
+        priority: 2
+      - originConversationID: 3
+        originDialogueID: 34
+        destinationConversationID: 3
+        destinationDialogueID: 36
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 226.0875
+        y: 695.74146
+        width: 160
+        height: 30
+    - id: 35
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Yes, I do.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 35
+        destinationConversationID: 3
+        destinationDialogueID: 37
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 226.0875
+        y: 745.7416
+        width: 160
+        height: 30
+    - id: 36
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: No I don't.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 36
+        destinationConversationID: 3
+        destinationDialogueID: 38
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 410.94473
+        y: 743.775
+        width: 160
+        height: 30
+    - id: 37
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '// Briefing Issue 2
+
+          Your boost is your tool;
+
+          While
+          travelling, press shift to use your boost;
+
+          If you find an upgrade
+          station, you can improve the efficiency of your boost;'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 37
+        destinationConversationID: 3
+        destinationDialogueID: 39
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 226.0875
+        y: 794.5023
+        width: 160
+        height: 30
+    - id: 38
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Be aware of your limited energy and extract energy from solar coil
+          batteries if needed. Your energy level is displayed in your internal HUD
+          on the top left.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 38
+        destinationConversationID: 3
+        destinationDialogueID: 34
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 407.9052
+        y: 646.8651
+        width: 160
+        height: 30
+    - id: 39
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Do you understand your boost Unit 254?
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: "PlayNPCSound(\"Computer\");\r"
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 39
+        destinationConversationID: 3
+        destinationDialogueID: 40
+        isConnector: 0
+        priority: 2
+      - originConversationID: 3
+        originDialogueID: 39
+        destinationConversationID: 3
+        destinationDialogueID: 41
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 226.0875
+        y: 845.7416
+        width: 160
+        height: 30
+    - id: 40
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Yes, I do.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 40
+        destinationConversationID: 3
+        destinationDialogueID: 43
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 226.0875
+        y: 895.74164
+        width: 160
+        height: 30
+    - id: 41
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: No I don't.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 41
+        destinationConversationID: 3
+        destinationDialogueID: 42
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 410.72165
+        y: 895.74176
+        width: 160
+        height: 30
+    - id: 42
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: You can press Shift while driving for a speed boost. At Upgrade Stations
+          you can make your boost faster to jump further.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 42
+        destinationConversationID: 3
+        destinationDialogueID: 39
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 410.72165
+        y: 795.8039
+        width: 160
+        height: 30
+    - id: 43
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '// Briefing Issue 3
+
+          You can talk to most electrical devices;
+
+          Some
+          devices might need energy to be activated;
+
+          Old Joule Units and
+          devices can help you find your way;'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 43
+        destinationConversationID: 3
+        destinationDialogueID: 44
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 226.0875
+        y: 945.7417
+        width: 160
+        height: 30
+    - id: 44
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Do you understand talking to other devices?
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: "PlayNPCSound(\"Computer\");\r"
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 44
+        destinationConversationID: 3
+        destinationDialogueID: 45
+        isConnector: 0
+        priority: 2
+      - originConversationID: 3
+        originDialogueID: 44
+        destinationConversationID: 3
+        destinationDialogueID: 46
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 226.0875
+        y: 995.7417
+        width: 160
+        height: 30
+    - id: 45
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Yes, I do.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 45
+        destinationConversationID: 3
+        destinationDialogueID: 48
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 226.0875
+        y: 1045.7417
+        width: 160
+        height: 30
+    - id: 46
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: No I don't.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 46
+        destinationConversationID: 3
+        destinationDialogueID: 47
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 418.07083
+        y: 1044.5024
+        width: 160
+        height: 30
+    - id: 47
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: If you approach devices and look in their direction, you can activate
+          them to get information. However, some require your energy to reactivate.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 47
+        destinationConversationID: 3
+        destinationDialogueID: 44
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 411.96082
+        y: 948.2822
+        width: 160
+        height: 30
+    - id: 48
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: The briefing is hereby completed.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: "PlayNPCSound(\"Computer\");\r"
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 48
+        destinationConversationID: 3
+        destinationDialogueID: 8
+        isConnector: 0
+        priority: 2
+      - originConversationID: 3
+        originDialogueID: 48
+        destinationConversationID: 3
+        destinationDialogueID: 20
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: "Variable[\"Instructed\"] = true;\r"
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 226.0875
+        y: 1095.7417
+        width: 160
+        height: 30
+    - id: 49
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: I don't need a tutorial.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 49
+        destinationConversationID: 3
+        destinationDialogueID: 8
+        isConnector: 0
+        priority: 2
+      - originConversationID: 3
+        originDialogueID: 49
+        destinationConversationID: 3
+        destinationDialogueID: 20
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: "Variable[\"Instructed\"] = true;\r"
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 508.85272
+        y: 298.83896
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 106.60725, y: 118.08934}
-    canvasZoom: 0.89700115
+    canvasScrollPosition: {x: 40.643356, y: 483.9823}
+    canvasZoom: 0.5370015
   - id: 4
     fields:
     - title: Title
@@ -12324,7 +13113,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
+    canvasScrollPosition: {x: 0, y: 73.417694}
     canvasZoom: 0.7900002
   - id: 6
     fields:
@@ -12454,7 +13243,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: 
       conversationID: 6
@@ -12631,7 +13420,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -12735,7 +13524,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: 
       conversationID: 6
@@ -12912,7 +13701,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -12967,7 +13756,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: 
       conversationID: 6
@@ -13152,7 +13941,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -13330,7 +14119,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: 
       conversationID: 6
@@ -13543,7 +14332,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 113.92401}
+    canvasScrollPosition: {x: 1.2658081, y: 21.518982}
     canvasZoom: 0.7900002
   - id: 7
     fields:
@@ -18387,7 +19176,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 722.70764
-        y: 153.74844
+        y: 145.12775
         width: 160
         height: 30
     - id: 15
@@ -18413,7 +19202,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Mx. is simply a neutral term for Mr. or Mrs.
+        value: Mx. is a neutral term for Mr. or Mrs.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -18431,12 +19220,6 @@ MonoBehaviour:
       - originConversationID: 9
         originDialogueID: 15
         destinationConversationID: 9
-        destinationDialogueID: 17
-        isConnector: 0
-        priority: 2
-      - originConversationID: 9
-        originDialogueID: 15
-        destinationConversationID: 9
         destinationDialogueID: 27
         isConnector: 0
         priority: 2
@@ -18446,57 +19229,8 @@ MonoBehaviour:
         destinationDialogueID: 25
         isConnector: 0
         priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 722.70764
-        y: 203.74841
-        width: 160
-        height: 30
-    - id: 16
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 10
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: My occupation is to elevate you, dear Mx.
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      conversationID: 9
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
       - originConversationID: 9
-        originDialogueID: 16
+        originDialogueID: 15
         destinationConversationID: 9
         destinationDialogueID: 18
         isConnector: 0
@@ -18508,63 +19242,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 726.1168
-        y: 309.4302
-        width: 160
-        height: 30
-    - id: 17
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 4
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: Why don't you use Mr. or Mrs.?
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      conversationID: 9
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 9
-        originDialogueID: 17
-        destinationConversationID: 9
-        destinationDialogueID: 16
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 723.844
-        y: 256.02118
+        x: 722.70764
+        y: 203.74841
         width: 160
         height: 30
     - id: 18
@@ -18590,8 +19269,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: I have neither the ocular sensors nor the slightest interest in passing
-          judgment on your person.
+        value: Unfortunately, I do not possess optical sensors to pass judgment on
+          your appearance.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -18631,8 +19310,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 726.1168
-        y: 359.4302
+        x: 719.1168
+        y: 267.4302
         width: 160
         height: 30
     - id: 19
@@ -20108,7 +20787,7 @@ MonoBehaviour:
         typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: Well, yes, of course. Vault tower is one of the main living quarters
-          for the workers of the Monument of Recovery.
+          for the workers of the Wind Monument.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -20251,8 +20930,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.7000003
+    canvasScrollPosition: {x: 0, y: 20.689636}
+    canvasZoom: 0.58000034
   - id: 10
     fields:
     - title: Title
@@ -20377,11 +21056,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Oh hey lost soul!
+        value: Welcome lost soul!
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 10
@@ -20491,7 +21170,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: CustomFieldType_Text
       - title: Response Menu Sequence
@@ -20660,7 +21339,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 10
@@ -20831,7 +21510,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 10
@@ -20996,7 +21675,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 10
@@ -21106,7 +21785,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: "PlayNPCSound(\"Joule\");\r"
+        value: "PlayNPCSound(\"JouleOld\");\r"
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 10
@@ -29300,7 +29979,7 @@ MonoBehaviour:
         destinationDialogueID: 6
         isConnector: 0
         priority: 2
-      conditionsString: Variable["RiddleSolved"] == false
+      conditionsString: Variable["Riddle"] == false
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -29467,7 +30146,7 @@ MonoBehaviour:
         destinationDialogueID: 11
         isConnector: 0
         priority: 2
-      conditionsString: Variable["RiddleSolved"] == false
+      conditionsString: Variable["Riddle"] == false
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -30209,7 +30888,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: "PlayNPCSound(\"Joule\");\r"
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 15
@@ -30536,7 +31215,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Judging by the log data in the control units, they are experimenting
+        value: Judging by the log records in the control units, they are experimenting
           by giving the Joule units certain properties and loosening their AI.
         type: 0
         typeString: CustomFieldType_Text
@@ -31007,7 +31686,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Which Control Units? And which log-data?
+        value: Log records?
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -31158,8 +31837,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 123.0618}
-    canvasZoom: 0.5500004
+    canvasScrollPosition: {x: 53.128433, y: 0}
+    canvasZoom: 0.58000064
   - id: 16
     fields:
     - title: Title
@@ -31632,14 +32311,14 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "Hey Nancy, if you're still in the valley, please send me a telumen.
+        value: "// Hey Nancy, if you're still in the valley, please send me a telumen.
           They want us to give up Wind Village and move to the Dome Cities. Right
           now... after all we've been through. None of this makes sense! I need to
           talk to you. Please light back. \nxoxo L."
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: "PlayNPCSound(\"Appliances\");\r PlayNPCSound(\"Appliances\");\r PlayNPCSound(\"Appliances\");\r"
+        value: "PlayNPCSound(\"Computer\");\r"
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 16
@@ -31676,7 +32355,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 304.82748
-        y: 281.72412
+        y: 289.61884
         width: 160
         height: 30
     - id: 8
@@ -31812,7 +32491,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 'Dear Recovery Workers,
+        value: '// Dear Recovery Workers,
 
           If you are still in Vault Tower
           at this time, I must warn you to leave immediately and report to the Coil
@@ -31827,7 +32506,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: "PlayNPCSound(\"Appliances\");\r"
+        value: "PlayNPCSound(\"Computer\");\r"
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 16
@@ -31896,16 +32575,16 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 'Hey Nance,
+        value: '// Hey Nance,
 
-          I guess you will never read this but if so,
-          Pascal and I are set to leave for Dome City-94, Sector A. They say the
-          Coil-Trains will operate between some cities soon, but who knows when.
+          I guess you will never read this but if
+          so, Pascal and I are set to leave for Dome City-94, Sector A. They say
+          the Coil-Trains will operate between some cities soon, but who knows when.
           I hope to see you again. Love L.'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: "PlayNPCSound(\"Appliances\");\r"
+        value: "PlayNPCSound(\"Computer\");\r"
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 16
@@ -31962,12 +32641,17 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: This week's passcode is the binary code for the answer to the big
-          question about life, the universe and everything.
+        value: '// This week''s passcode is the binary code for the answer to the
+          big question about life, the universe and everything.
+
+          This week''s
+          riddle was randomly selected from our volunteer passcode riddle database.
+          The author of this week''s puzzle is Marvin Adams from floor -11. Congratulations,
+          Marvin, you''ve won two weeks above ground level.'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: "PlayNPCSound(\"Appliances\");\r"
+        value: "PlayNPCSound(\"Computer\");\r"
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 16
@@ -32018,13 +32702,12 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: This week's riddle was randomly selected from our volunteer passcode
-          riddle database. The author of this week's puzzle is Marvin Adams from
-          floor -11. Congratulations, Marvin, you've won two weeks above ground level.
+        value: // This message was generated automatically. Please don't light to
+          this channel.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: "PlayNPCSound(\"Appliances\");\r"
+        value: "PlayNPCSound(\"Computer\");\r"
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 16
@@ -32038,13 +32721,7 @@ MonoBehaviour:
       - originConversationID: 16
         originDialogueID: 13
         destinationConversationID: 16
-        destinationDialogueID: 4
-        isConnector: 0
-        priority: 2
-      - originConversationID: 16
-        originDialogueID: 13
-        destinationConversationID: 16
-        destinationDialogueID: 18
+        destinationDialogueID: 23
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -32136,7 +32813,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 'Dear Recovery Workers,
+        value: '// Dear Recovery Workers,
 
 
           On behalf of the Joule Corporation,
@@ -32159,7 +32836,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: "PlayNPCSound(\"Appliances\");\r"
+        value: "PlayNPCSound(\"Computer\");\r"
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 16
@@ -32564,8 +33241,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: I'm afraid I am not allowed to discuss personal affairs with strangers.
-          I wish you a pleasant stay.
+        value: I'm afraid I am not allowed to discuss personal affairs without her
+          consent. I wish you a pleasant stay.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -32591,9 +33268,70 @@ MonoBehaviour:
         y: 331.72412
         width: 160
         height: 30
+    - id: 23
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 16
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Oh I know that! It's 42!
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: "PlayNPCSound(\"Appliances\");\r"
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 16
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 16
+        originDialogueID: 23
+        destinationConversationID: 16
+        destinationDialogueID: 18
+        isConnector: 0
+        priority: 2
+      - originConversationID: 16
+        originDialogueID: 23
+        destinationConversationID: 16
+        destinationDialogueID: 4
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 502.82745
+        y: 430.72412
+        width: 160
+        height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 3.040306}
-    canvasZoom: 0.5500004
+    canvasScrollPosition: {x: 18.04253, y: 113.50561}
+    canvasZoom: 0.73000026
   syncInfo:
     syncActors: 0
     syncItems: 0

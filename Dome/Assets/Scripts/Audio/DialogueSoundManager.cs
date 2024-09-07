@@ -13,11 +13,13 @@ public class DialogueSoundManager : MonoBehaviour
     [SerializeField]
     private EventReference appliancesTalkSound; // FMOD event reference for Appliances talk sound
     [SerializeField]
-    private EventReference joulesTalkSound; // FMOD event reference for Joules talk sound
+    private EventReference joulesNewSound; // FMOD event reference for Joules talk sound
     [SerializeField]
     private EventReference monumentTalkSound; // FMOD event reference for Monument talk sound
     [SerializeField]
     private EventReference numberDialSound; // FMOD event reference for dial sounds
+    [SerializeField]
+    private EventReference jouleOldSound; // FMOD event reference for dial sounds
 
     private Transform playerTransform;
 
@@ -56,13 +58,16 @@ public class DialogueSoundManager : MonoBehaviour
                 soundToPlay = appliancesTalkSound;
                 break;
             case "Joule":
-                soundToPlay = joulesTalkSound;
+                soundToPlay = joulesNewSound;
                 break;
             case "Monument":
                 soundToPlay = monumentTalkSound;
                 break;
             case "Dial":
                 soundToPlay = numberDialSound;
+                break;
+            case "JouleOld":
+                soundToPlay = jouleOldSound;
                 break;
             default:
                 Debug.LogWarning($"Unknown NPC name: '{npcName}'");
